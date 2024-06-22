@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pago con tarjeta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/pasarela_pago.css"/>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+            />
+        <script src="../js/productosTienda.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registro de Tarjeta de Crédito</h1>
+            <form id="credit-card-form" onsubmit="return returnPayment()">
+                <input type="text" id="card-number" placeholder="Número de Tarjeta" required>
+                <input type="date" id="expiration-date" placeholder="Fecha de Caducidad" required>
+                <input type="text" id="cardholder-name" placeholder="Nombre del Titular" required>
+                <input type="number" id="cvv" placeholder="Código CVV" required>
+
+                <input type="submit" value="Registrar Tarjeta y Pagar">
+            </form>
+            <div id="payment-success">Pago realizado con éxito</div>
+        </div>   
+    </body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #999999;
+    border-radius: 10px;
+}
+.logo {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9933;
+}
+#logo-titulo{
+    max-height: 50px;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+.footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    color: #0056b3;
+}
+.contact-info {
+    margin-top: 20px;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
+}
+label{
+    font-size: 25px;
+}
+#footer{
+    text-align: center;
+}
+.pasarela-container {
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.contacto{
+    width: 40px;
+    height: auto;
+}
+.div-centrado {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#captchaText{
+    width: 30%; 
+    display: inline;
+}

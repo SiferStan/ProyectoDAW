@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tienda</title>       
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="../estilos/cabeceraEcoDelicias.css"/>
+        <link rel="stylesheet" href="../estilos/tienda_estilos1.css"/>
+        <script src="../js/productosTienda.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row align-items-center">                    
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="../imágenes/Logo_EcoDelicias.jpg" alt="EcoDelicias" class="rounded-circle mr-3" style="max-height: 50px"/>
+                        <span class="logo">EcoDelicias</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="menu d-flex justify-content-end">
+                            <li><a href="../index.php">Inicio</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+                            <li>
+                                <div class="cart-container">
+                                    <button class="btn btn-secondary cart" type="button" id="cartButton">
+                                        <img src="../imágenes/carrito_compra.png" class="contacto" alt="carrito">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+
+                                    <div class="cart-products hidden" id="cartProducts"></div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section>
+                <div class="container mt-5">
+                    <h2>Búsqueda avanzada</h2>
+                    <form id="searchForm">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" id="searchName" class="form-control" placeholder="Buscar por nombre">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" id="minPrice" class="form-control" placeholder="Precio mínimo">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" id="maxPrice" class="form-control" placeholder="Precio máximo">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Buscar</button>
+                    </form>
+                </div>
+                <div class="cont-productos productos"></div>
+            </section>
+        </div>
+        <script src="../js/boton_carrito.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrarse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" type="text/css" href="../estilos/cabeceraEcoDelicias.css" >
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row align-items-center">                    
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="../imágenes/Logo_EcoDelicias.jpg" alt="EcoDelicias" class="rounded-circle mr-3" id="logo-titulo"/>
+                        <span class="logo">EcoDelicias</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="menu d-flex justify-content-end">
+                            <li><a href="../index.php">Inicio</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        <div class="container mb-3 mt-3">
+            <h2 class="display-1">Registrarse</h2>
+            <form action="../php/registrarse.php" method="post" class="container mt-3 mb-3">
+                <div class="container mb-3 mt-3">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" name="apellido" id="apellido" required class="form-control"> 
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="password" name="contraseña" id="contraseña" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="telefono">Teléfono</label><br>
+                    <input type="text" name="telefono" id="telefono" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="mail">Mail</label><br>
+                    <input type="email" name="mail" id="mail" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="direccion">Dirección</label><br>
+                    <input type="text" name="direccion" id="direccion" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <label for="localidad">Localidad</label><br>
+                    <input type="text" name="localidad" id="localidad" required class="form-control">
+                </div>
+                <div class="container mb-3 mt-3">
+                    <input type="submit" value="Guardar datos" class=" btn btn-primary mb-3"><br>
+                    <a href="registro.html" class="btn btn-primary">Nuevo Registro</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
