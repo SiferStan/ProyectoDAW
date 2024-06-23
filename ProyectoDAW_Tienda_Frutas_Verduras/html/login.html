@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Iniciar sesión</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -32,15 +33,15 @@
             </div>
         </header>
         <div class="container mb-3 mt-3">
-            <h1 class="display-2">Iniciar sesión</h1>
-            <form action="../php/autenticar_usuarios.php" method="post" class="container">
+            <h2 class="display-2">Iniciar sesión</h2>
+            <form action="../php/autenticar_usuarios.php" method="post" class="container mt-3 mb-3">
                 <div class="container mb-3 mt-3">
-                    <label for="nombre" class="text-center">Nombre de usuario:</label><br>
-                    <input type="text" name="nombre" id="nombre" required class="form-control mt-3" placeholder="Ingrese su nombre">
+                    <label for="nombre">Nombre de usuario</label><br>
+                    <input type="text" name="nombre" id="nombre" required class="form-control">
                 </div>
                 <div class="container mb-3 mt-3">
-                    <label for="contraseña" class="text-center">Contraseña:</label><br>
-                    <input type="password" name="contraseña" id="contraseña" required class="form-control mt-3" placeholder="Ingrese su contraseña">
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="password" name="contraseña" id="contraseña" required class="form-control">
                     <input type="submit" value="Iniciar sesión" class="btn btn-primary mb-3 mt-3"><br>
                     <a href ='registro.html' class="btn btn-primary mb-3">Registrarse</a>
                 </div>
